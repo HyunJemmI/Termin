@@ -28,6 +28,12 @@ def send_email():
     sender_email = os.getenv("EMAIL_SENDER") # 너거 이메일 <- .env에 넣어야함
     receiver_email = os.getenv("EMAIL_RECEIVER") # 이것도 너거 이메일 <- 요놈도 .env
     app_password = os.getenv("EMAIL_APP_PASSWORD") # 패스워드 <- 진짜진짜진짜 env에 넣어서 불러오려무나
+
+    # ────────────────────────────────
+    # EMAIL_APP_PASSWORD=너 이메일 비밀번호 // 어차피 위에 ""로 묶여있어서 따로 하지마
+    # EMAIL_SENDER = 님 이메일. 남자친구가 챙겨주는 느낌 내고싶으면 남자친ㄹ구 이메일 넣으렴
+    # EMAIL_RECEIVER = 님 이메일
+    # ────────────────────────────────  
     subject = "뮌헨 예약 ㄱㄱㄱㄱㄱㄱㄱㄱㄱ"
     body = "https://stadt.muenchen.de/buergerservice/terminvereinbarung.html#/services/10339027/locations/10187259 빨리 ㄱㄱㄱㄱㄱㄱㄱㄱ"
 
